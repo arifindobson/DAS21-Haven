@@ -1,5 +1,15 @@
 import streamlit as st
 
+hide_menu_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    </style>
+    """
+
+st.markdown(hide_menu_style, unsafe_allow_html=True)
+
+
 # Indonesian rating scale
 rating_scale = {
     "0": "Tidak berlaku sama sekali",
@@ -41,8 +51,8 @@ scoring_table = {
 }
 
 # Streamlit app layout
-st.title("Kuesioner Penilaian Diri")
-
+st.title("Kuesioner Penilaian Diri (DASS-21)")
+st.write("Berdasarkan form penelitian Lovibond [disini](https://maic.qld.gov.au/wp-content/uploads/2016/07/DASS-21.pdf)")
 responses = {"Depression": 0, "Anxiety": 0, "Stress": 0}
 
 # Display each question with radio buttons for rating
