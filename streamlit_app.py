@@ -5,8 +5,18 @@ hide_menu_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     </style>
-    """
-hide_streamlit_style = """
+    <style>
+    @media only screen and (max-width: 600px) {
+        .css-1cpxqw2, .css-12ttj6m {
+            width: 100% !important;
+            padding: 0 !important;
+        }
+        .block-container {
+            padding-left: 0.5rem !important;
+            padding-right: 0.5rem !important;
+        }
+    }
+    </style>
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
@@ -14,7 +24,6 @@ hide_streamlit_style = """
     .stActionButton {display: none;}  /* Hides the Fork button */
     </style>
     """
-
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
 
