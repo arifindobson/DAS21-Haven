@@ -5,13 +5,14 @@ hide_menu_style = """
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     @media only screen and (max-width: 600px) {
-        .css-1cpxqw2, .css-12ttj6m {
+        .main {
             width: 100% !important;
-            padding: 0 !important;
+            padding-left: 0px;
+            padding-right: 0px;
         }
         .block-container {
-            padding-left: 0.5rem !important;
-            padding-right: 0.5rem !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
         }
     }
     .css-1q8dd3e {visibility: hidden;}  /* Hides the GitHub button */
