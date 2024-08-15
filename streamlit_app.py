@@ -6,6 +6,14 @@ hide_menu_style = """
     footer {visibility: hidden;}
     </style>
     """
+hide_streamlit_style = """
+    <style>
+    #MainMenu {visibility: hidden;}
+    footer {visibility: hidden;}
+    .css-1q8dd3e {visibility: hidden;}  /* Hides the GitHub button */
+    .stActionButton {display: none;}  /* Hides the Fork button */
+    </style>
+    """
 
 st.markdown(hide_menu_style, unsafe_allow_html=True)
 
