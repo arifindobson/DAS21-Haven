@@ -4,8 +4,6 @@ hide_menu_style = """
     <style>
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
-    </style>
-    <style>
     @media only screen and (max-width: 600px) {
         .css-1cpxqw2, .css-12ttj6m {
             width: 100% !important;
@@ -16,10 +14,6 @@ hide_menu_style = """
             padding-right: 0.5rem !important;
         }
     }
-    </style>
-    <style>
-    #MainMenu {visibility: hidden;}
-    footer {visibility: hidden;}
     .css-1q8dd3e {visibility: hidden;}  /* Hides the GitHub button */
     .stActionButton {display: none;}  /* Hides the Fork button */
     </style>
